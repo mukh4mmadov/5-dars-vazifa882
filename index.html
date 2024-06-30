@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALL products</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="font-sans">
+    <header class="bg-slate-300 mb-5">
+      <div class="wrapper">
+        <div class="navbar bg-slate-300 rounded-md">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl" href="./index.html"
+              >All products</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn">button</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="wrapper">
+          <ul id="list" class="grid grid-cols-3 gap-x-8 gap-y-3">
+            <template class="template-1">
+              <li class="rounded-lg bg-base-200 grid p-3">
+                <div class="flex justify-center">
+                  <img
+                    class="images object-cover"
+                    src=""
+                    alt=""
+                    width="150"
+                    height="100"
+                  />
+                </div>
+                <h2 class="h2-title font-bold text-[20px] my-3">Title</h2>
+                <div class="card-actions justify-end">
+                  <a class="batafsil-link btn btn-primary" href="">Read More</a>
+                </div>
+              </li>
+            </template>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div class="overlay absolute hidden left-0 top-0 bottom-0 right-0">
+      <div
+        class="loading loading-spinner fixed top-[50%] left-[50%] translate-[-50%, -50%]"
+      ></div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script type="module" src="./js/request.js"></script>
+    <script type="module" src="./js/loading.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
